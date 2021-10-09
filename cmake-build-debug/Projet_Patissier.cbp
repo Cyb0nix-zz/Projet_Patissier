@@ -77,6 +77,12 @@
 		<Unit filename="W:/Projet_Patissier/main.c">
 			<Option target="Projet_Patissier"/>
 		</Unit>
+		<Unit filename="W:/Projet_Patissier/patissier.c">
+			<Option target="Projet_Patissier"/>
+		</Unit>
+		<Unit filename="W:/Projet_Patissier/patissier.h">
+			<Option target="Projet_Patissier"/>
+		</Unit>
 		<Unit filename="W:/Projet_Patissier/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

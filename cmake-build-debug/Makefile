@@ -168,6 +168,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_Patissier.dir\build.make CMakeFiles/Projet_Patissier.dir/main.c.s
 .PHONY : main.c.s
 
+patissier.obj: patissier.c.obj
+
+.PHONY : patissier.obj
+
+# target to build an object file
+patissier.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_Patissier.dir\build.make CMakeFiles/Projet_Patissier.dir/patissier.c.obj
+.PHONY : patissier.c.obj
+
+patissier.i: patissier.c.i
+
+.PHONY : patissier.i
+
+# target to preprocess a source file
+patissier.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_Patissier.dir\build.make CMakeFiles/Projet_Patissier.dir/patissier.c.i
+.PHONY : patissier.c.i
+
+patissier.s: patissier.c.s
+
+.PHONY : patissier.s
+
+# target to generate assembly for a file
+patissier.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projet_Patissier.dir\build.make CMakeFiles/Projet_Patissier.dir/patissier.c.s
+.PHONY : patissier.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -180,6 +207,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... patissier.obj
+	@echo ... patissier.i
+	@echo ... patissier.s
 .PHONY : help
 
 

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "W:/Projet_Patissier/main.c" "W:/Projet_Patissier/cmake-build-debug/CMakeFiles/Projet_Patissier.dir/main.c.obj"
+  "W:/Projet_Patissier/patissier.c" "W:/Projet_Patissier/cmake-build-debug/CMakeFiles/Projet_Patissier.dir/patissier.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
