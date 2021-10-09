@@ -13,7 +13,7 @@ typedef struct Gateau{
 }Gateau;
 
 typedef struct File_Commandes{
-//TODO
+    struct Element_str* commande;
 }File_Commandes;
 
 typedef struct Pile_Gouts{
@@ -28,5 +28,11 @@ typedef struct Element_gtx{
 typedef struct File_Degustation{
 //TODO
 }File_Degustation;
+
+Element_str* creer_gout(char* gout);
+
+Element_str* initialiser_gouts();
+
+File_Commandes* initialiser_file_commandes();
 
 #endif //PROJET_PATISSIER_PATISSIER_H
