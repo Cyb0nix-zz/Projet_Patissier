@@ -4,8 +4,6 @@
 #include <malloc.h>
 #include <string.h>
 
-
-
 Element_str* creer_gout(char* gout){
     /*
      * fonction créant la structure comprenant les goûts
@@ -37,6 +35,7 @@ Element_str* initialiser_gouts(){
 }
 
 File_Commandes* init_file_commande(){
+
     File_Commandes* f_commandes = (File_Commandes *) malloc(sizeof(File_Commandes));
     f_commandes->commande = NULL;
 
@@ -60,6 +59,8 @@ void passer_commande(char commande[50], struct File_Commandes* f_commandes){
 
         if (cpt<10){
             tmp->next = nouvelle_element;
+        } else{
+            printf("Nombre maximal de commande simultané atteint\n");
         }
 
     }
@@ -68,12 +69,14 @@ void passer_commande(char commande[50], struct File_Commandes* f_commandes){
 Element_str* traiter_commande(File_Commandes* f_commandes){
 
     if (f_commandes->commande != NULL){
-        Element_str* res = f_commandes->commande;
+        Element_str* res = (Element_str*) malloc(sizeof(Element_str));
+        *res = *f_commandes->commande;
         Element_str* old = f_commandes->commande;
         f_commandes->commande = f_commandes->commande->next;
         free(old);
         return res;
     }
+    return NULL;
 }
 
 Gateau* creer_gateau(Element_str* commande){
@@ -88,6 +91,7 @@ void construire_gateau(Gateau* gateau, Element_str* l_gouts){
     for (int i = 0; i < sizeof(gateau->commande->texte); ++i) {
         Element_str* tmp = l_gouts;
         while (tmp != NULL){
+            //printf("%c",tmp->texte[0]);
             if (gateau->commande->texte[i] == tmp->texte[0]){
                 ajouter_gout(gateau->p_gouts,tmp->texte);
             }
@@ -145,6 +149,8 @@ void degustation(File_Degustation* f_degustation, int nb_parts){
                 free(old);
             }
         }
+    } else{
+        printf("Il n'y a plus de gateau\n");
     }
 }
 

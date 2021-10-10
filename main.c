@@ -11,14 +11,7 @@ int main() {
     Gateau* gateau_1 = creer_gateau(traiter_commande(f_commandes));
     construire_gateau(gateau_1,l_gouts);
     livrer(gateau_1,f_degustation);
-    for (int i = 0; i < 4; ++i) {
-        Element_str* tmp = gateau_1->p_gouts->gout;
-        printf("%s",tmp->texte);
-        tmp = tmp->next;
-
-    }
     degustation(f_degustation,4);
-    printf("%d",f_degustation->gateau->parts);
 
 
 
