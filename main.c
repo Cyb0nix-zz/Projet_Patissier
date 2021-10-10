@@ -4,6 +4,24 @@
 
 
 int main() {
+    Element_str* l_gouts = initialiser_gouts();
+    File_Commandes* f_commandes = init_file_commande();
+    File_Degustation* f_degustation = init_file_degustation();
+    passer_commande("CMVP",f_commandes);
+    Gateau* gateau_1 = creer_gateau(traiter_commande(f_commandes));
+    construire_gateau(gateau_1,l_gouts);
+    livrer(gateau_1,f_degustation);
+    for (int i = 0; i < 4; ++i) {
+        Element_str* tmp = gateau_1->p_gouts->gout;
+        printf("%s",tmp->texte);
+        tmp = tmp->next;
+
+    }
+    degustation(f_degustation,4);
+    printf("%d",f_degustation->gateau->parts);
+
+
+
     return 0;
 }
 

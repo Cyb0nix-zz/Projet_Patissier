@@ -4,9 +4,6 @@
 #include <malloc.h>
 #include <string.h>
 
-//appels des variables permanentes
-Element_str* l_gouts;
-File_Degustation* f_degustation;
 
 
 Element_str* creer_gout(char* gout){
@@ -69,8 +66,89 @@ void passer_commande(char commande[50], struct File_Commandes* f_commandes){
 }
 
 Element_str* traiter_commande(File_Commandes* f_commandes){
-    
+
+    if (f_commandes->commande != NULL){
+        Element_str* res = f_commandes->commande;
+        Element_str* old = f_commandes->commande;
+        f_commandes->commande = f_commandes->commande->next;
+        free(old);
+        return res;
+    }
 }
+
+Gateau* creer_gateau(Element_str* commande){
+    Gateau* gateau = (Gateau*) malloc(sizeof(Gateau));
+    gateau->commande = commande;
+    gateau->p_gouts = NULL;
+    return gateau;
+}
+
+void construire_gateau(Gateau* gateau, Element_str* l_gouts){
+    gateau->p_gouts = init_pile_gout();
+    for (int i = 0; i < sizeof(gateau->commande->texte); ++i) {
+        Element_str* tmp = l_gouts;
+        while (tmp != NULL){
+            if (gateau->commande->texte[i] == tmp->texte[0]){
+                ajouter_gout(gateau->p_gouts,tmp->texte);
+            }
+            tmp = tmp->next;
+        }
+    }
+}
+
+Pile_Gouts* init_pile_gout(){
+    Pile_Gouts* pile_gouts = (Pile_Gouts*) malloc(sizeof(Pile_Gouts));
+    pile_gouts->gout = NULL;
+    return pile_gouts;
+}
+
+void ajouter_gout(Pile_Gouts* p_gout, char* gout){
+    Element_str* nouveau_gout = (Element_str*) malloc(sizeof(Element_str));
+    strcpy(nouveau_gout->texte,gout);
+    nouveau_gout->next = p_gout->gout;
+    p_gout->gout = nouveau_gout;
+}
+
+File_Degustation* init_file_degustation(){
+    File_Degustation * f_degustation = (File_Degustation*) malloc(sizeof(File_Degustation));
+    f_degustation->gateau = NULL;
+
+    return f_degustation;
+}
+
+void livrer(Gateau* gateau, File_Degustation* f_degustation){
+    Element_gtx * nouveau_gateau = (Element_gtx*)malloc(sizeof(Element_gtx));
+    nouveau_gateau->gateau = gateau;
+    nouveau_gateau->next = NULL;
+    nouveau_gateau->parts = 5;
+
+    if (f_degustation->gateau == NULL){
+        f_degustation->gateau = nouveau_gateau;
+    }else{
+        Element_gtx* tmp = f_degustation->gateau;
+        while (tmp->next != NULL){
+            tmp = tmp->next;
+        }
+
+        tmp->next = nouveau_gateau;
+
+    }
+}
+
+void degustation(File_Degustation* f_degustation, int nb_parts){
+    if (f_degustation->gateau != NULL){
+        for (int i = 0; i < nb_parts; ++i) {
+            f_degustation->gateau->parts--;
+            if(f_degustation->gateau->parts == 0){
+                Element_gtx * old = f_degustation->gateau;
+                f_degustation->gateau = f_degustation->gateau->next;
+                free(old);
+            }
+        }
+    }
+}
+
+
 
 
 
