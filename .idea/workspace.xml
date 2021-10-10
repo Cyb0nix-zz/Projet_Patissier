@@ -16,8 +16,11 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patissier.c" beforeDir="false" afterPath="$PROJECT_DIR$/patissier.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patissier.h" beforeDir="false" afterPath="$PROJECT_DIR$/patissier.h" afterDir="false" />
     </list>
-    <list id="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" name="Changes by soazi" comment="" />
+    <list id="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" name="Changes by soazi" comment="">
+      <change beforePath="$PROJECT_DIR$/patissier.c" beforeDir="false" afterPath="$PROJECT_DIR$/patissier.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +32,29 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/patissier.c">
+      <ranges>
+        <range start1="8" end1="11" start2="8" end2="11" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="20" end1="23" start2="20" end2="22" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="37" end1="38" start2="36" end2="40" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="45" end1="45" start2="47" end2="51" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="62" end1="63" start2="68" end2="69" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="69" end1="70" start2="75" end2="80" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="82" end1="82" start2="92" end2="97" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="89" end1="89" start2="104" end2="108" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="93" end1="94" start2="112" end2="112" changelist="1a432efc-1a61-48d3-ba42-ca7c5e0ffe7b" />
+        <range start1="103" end1="103" start2="121" end2="125" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="109" end1="109" start2="131" end2="135" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="116" end1="117" start2="142" end2="147" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="123" end1="124" start2="153" end2="158" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="142" end1="142" start2="176" end2="180" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="146" end1="147" start2="184" end2="185" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+        <range start1="150" end1="150" start2="188" end2="189" changelist="1a432efc-1a61-48d3-ba42-ca7c5e0ffe7b" />
+        <range start1="152" end1="153" start2="191" end2="192" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1zGqODFspQQaxeKvAPnXVxVVKKq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -74,7 +100,7 @@
       <workItem from="1633865047329" duration="656000" />
       <workItem from="1633865724522" duration="5626000" />
       <workItem from="1633874083412" duration="4399000" />
-      <workItem from="1633879170909" duration="11064000" />
+      <workItem from="1633879170909" duration="20293000" />
     </task>
     <servers />
   </component>

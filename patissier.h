@@ -54,4 +54,11 @@ void livrer(Gateau* gateau, File_Degustation* f_degustation);
 
 void degustation(File_Degustation* f_degustation, int nb_parts);
 
+void menu(File_Commandes* f_commandes, Element_str* l_gouts, File_Degustation* f_degustation);
+
+void commander_gateau(File_Commandes* f_commandes, Element_str* l_gouts, File_Degustation* f_degustation);
+
+void manger_gateau(File_Degustation* f_desgustation);
+
+
 #endif //PROJET_PATISSIER_PATISSIER_H
