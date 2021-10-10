@@ -1,13 +1,13 @@
 #include <stdio.h>
+#include <malloc.h>
 #include "patissier.h"
 
+
 int main() {
-
-
     return 0;
 }
 
-void menu() {
+/*void menu() {
     char choix_etage = NULL;
     while (choix_etage != "o" && choix_etage != "n") {
         printf("Souhaiteriez vous un étage de gâteau ? \n"
@@ -42,3 +42,4 @@ void menu() {
         }
     }
 }
+*/

@@ -12,17 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a432efc-1a61-48d3-ba42-ca7c5e0ffe7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_Patissier.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_Patissier.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_Patissier.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Projet_Patissier.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patissier.c" beforeDir="false" afterPath="$PROJECT_DIR$/patissier.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patissier.h" beforeDir="false" afterPath="$PROJECT_DIR$/patissier.h" afterDir="false" />
     </list>
-    <list id="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" name="Changes by soazi" comment="">
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patissier.c" beforeDir="false" afterPath="$PROJECT_DIR$/patissier.c" afterDir="false" />
-    </list>
+    <list id="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" name="Changes by soazi" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,21 +33,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/main.c">
-      <ranges>
-        <range start1="1" end1="1" start2="1" end2="2" changelist="1a432efc-1a61-48d3-ba42-ca7c5e0ffe7b" />
-        <range start1="3" end1="4" start2="4" end2="6" changelist="1a432efc-1a61-48d3-ba42-ca7c5e0ffe7b" />
-        <range start1="7" end1="7" start2="9" end2="45" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/patissier.c">
-      <ranges>
-        <range start1="0" end1="0" start2="0" end2="1" changelist="43a34f45-4b99-49a7-8f27-b6b295d4d3fe" />
-        <range start1="2" end1="2" start2="3" end2="64" changelist="1a432efc-1a61-48d3-ba42-ca7c5e0ffe7b" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectId" id="1zGqODFspQQaxeKvAPnXVxVVKKq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -60,6 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
@@ -67,22 +51,12 @@
     <property name="cmake.loaded.for.project" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="last_opened_file_path" value="D:/" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Projet_Patissier" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Projet_Patissier" TARGET_NAME="Projet_Patissier" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Projet_Patissier" RUN_TARGET_NAME="Projet_Patissier">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -94,7 +68,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1633784738504</updated>
-      <workItem from="1633784742001" duration="10542000" />
+      <workItem from="1633784742001" duration="10572000" />
+      <workItem from="1633865047329" duration="656000" />
+      <workItem from="1633865724522" duration="5626000" />
+      <workItem from="1633874083412" duration="978000" />
     </task>
     <servers />
   </component>
@@ -111,5 +88,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

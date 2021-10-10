@@ -33,6 +33,8 @@ Element_str* creer_gout(char* gout);
 
 Element_str* initialiser_gouts();
 
-File_Commandes* initialiser_file_commandes();
+File_Commandes* init_file_commande();
+void passer_commande(char commande[50], struct File_Commandes* f_commandes);
+Element_str* traiter_commande(File_Commandes* f_commandes);
 
 #endif //PROJET_PATISSIER_PATISSIER_H

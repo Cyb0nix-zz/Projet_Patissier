@@ -6,7 +6,6 @@
 
 //appels des variables permanentes
 Element_str* l_gouts;
-File_Commandes* f_commandes;
 File_Degustation* f_degustation;
 
 
@@ -40,26 +39,40 @@ Element_str* initialiser_gouts(){
     return l_gout;
 }
 
+File_Commandes* init_file_commande(){
+    File_Commandes* f_commandes = (File_Commandes *) malloc(sizeof(File_Commandes));
+    f_commandes->commande = NULL;
+
+    return f_commandes;
+}
+
 void passer_commande(char commande[50], struct File_Commandes* f_commandes){
-    Element_str* nouvelle_element = (Element_str*) malloc(sizeof(Element_str));
+    Element_str* nouvelle_element = (Element_str*)malloc(sizeof(Element_str));
     strcpy(nouvelle_element->texte, commande);
     nouvelle_element->next = NULL;
 
     if (f_commandes->commande == NULL){
         f_commandes->commande = nouvelle_element;
     }else{
-        if()
+        int cpt = 0;
+        Element_str* tmp = f_commandes->commande;
+        while (tmp->next != NULL){
+            tmp = tmp->next;
+            cpt++;
+        }
+
+        if (cpt<10){
+            tmp->next = nouvelle_element;
+        }
+
     }
 }
 
-int nbr_commande(Element_str* liste)
-{
-    if( liste == NULL){
-        return 0;
-    }
-    else{
-        return 1 + nbr_commande(liste->next);
-    }
+Element_str* traiter_commande(File_Commandes* f_commandes){
+    
 }
+
+
+
 
 
